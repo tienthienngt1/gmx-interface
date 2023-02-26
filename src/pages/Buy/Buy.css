@@ -1,13 +1,12 @@
-.BuyGMXGLP {
-  background: #101124;
+.BuyOptimoon {
   justify-content: space-between;
 }
 
-.BuyGMXGLP-container {
+.BuyOptimoon-container {
   padding: 0 0 3.1rem 0;
   width: 100%;
 }
 
-.BuyGMXGLP-container .section-title-content {
+.BuyOptimoon-container .section-title-content {
   justify-content: flex-start;
 }

@@ -818,18 +818,6 @@ export const Exchange = forwardRef((props, ref) => {
             type="inline"
             className="Exchange-list-tabs"
           />
-          <div className="align-right Exchange-should-show-position-lines">
-            {renderCancelOrderButton()}
-            <Checkbox
-              isChecked={savedShouldShowPositionLines}
-              setIsChecked={setSavedShouldShowPositionLines}
-              className={cx("muted chart-positions", { active: savedShouldShowPositionLines })}
-            >
-              <span>
-                <Trans>Chart positions</Trans>
-              </span>
-            </Checkbox>
-          </div>
         </div>
         {listSection === POSITIONS && (
           <PositionsList
