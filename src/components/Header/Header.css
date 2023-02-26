@@ -179,14 +179,12 @@
   -o-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
 }
 .header-link-cus.active {
   background: linear-gradient(to right, rgb(250, 0, 0), rgb(255, 238, 1));
   -webkit-background-clip: text;
   background-clip: text;
   -o-background-clip: text;
-  -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   border-bottom: 2px solid #f70000b9;
@@ -310,6 +308,12 @@
 }
 
 @media (max-width: 600px) {
+  .header-link-cus {
+    -webkit-text-fill-color: unset;
+  }
+  .header-link-cus.active {
+    -webkit-text-fill-color: unset;
+  }
   .App-header-link-main img.big {
     display: none;
   }

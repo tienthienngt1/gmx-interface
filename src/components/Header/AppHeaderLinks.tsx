@@ -68,7 +68,7 @@ export function AppHeaderLinks({
         </HeaderLink>
       </div>
       <div className="App-header-link-container">
-        <ExternalLink href="https://gmxio.gitbook.io/gmx/" className="header-link-cus">
+        <ExternalLink href="https://optimoon.gitbook.io/optimoon/" className="header-link-cus">
           <Trans>Docs</Trans>
         </ExternalLink>
       </div>

@@ -34,7 +34,7 @@ const HOME_MENUS: HomeLink[] = [
   },
   {
     label: t`Docs`,
-    link: "https://gmxio.gitbook.io/gmx/",
+    link: "https://optimoon.gitbook.io/optimoon/",
   },
 ];
 

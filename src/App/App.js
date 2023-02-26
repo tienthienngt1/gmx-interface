@@ -59,7 +59,7 @@ import PositionRouter from "abis/PositionRouter.json";
 import PageNotFound from "pages/PageNotFound/PageNotFound";
 import ReferralTerms from "pages/ReferralTerms/ReferralTerms";
 import TermsAndConditions from "pages/TermsAndConditions/TermsAndConditions";
-import { useLocalStorage } from "react-use";
+import { useLocalStorage, useMedia } from "react-use";
 import { RedirectPopupModal } from "components/ModalViews/RedirectModal";
 import { REDIRECT_POPUP_TIMESTAMP_KEY } from "config/localStorage";
 import Jobs from "pages/Jobs/Jobs";
@@ -646,6 +646,14 @@ function FullApp() {
 }
 
 function App() {
+  const width = useMedia("(max-width: 400px)");
+  useEffect(() => {
+    const ref = document.querySelector("meta[name='viewport']");
+    ref?.setAttribute(
+      "content",
+      width ? "width=400,shrink-to-fit=no, maximum-scale=0.8" : "initial-scale=1, width=device-width"
+    );
+  }, []);
   useScrollToTop();
   useEffect(() => {
     const defaultLanguage = localStorage.getItem(LANGUAGE_LOCALSTORAGE_KEY) || defaultLocale;

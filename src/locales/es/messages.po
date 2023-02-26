@@ -13,18 +13,6 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/Dashboard/DashboardV2.js
-msgid "01 Sep 2021"
-msgstr "01 Sep 2021"
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "06 Jan 2022"
-msgstr "06 Ene 2022"
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "24h Volume"
-msgstr "24h Volumen"
-
 #: src/components/Exchange/PositionSeller.js
 msgid "<0/>Profit price: {0} ${1}. This rule applies for the next {2}, until {3}."
 msgstr "<0/>Precio ganancia: {0} ${1}. Esta regla aplica para el próximo {2}, hasta {3}."
@@ -69,10 +57,6 @@ msgstr ""
 msgid "<0>This will withdraw and unreserve all tokens as well as pause vesting.<1/><2/>esGMX tokens that have been converted to GMX will remain as GMX tokens.<3/><4/>To claim GMX tokens without withdrawing, use the \"Claim\" button under the Total Rewards section.<5/><6/></0>"
 msgstr "<0>Esto retirará y desreservará todos los tokens y pausará la adquisición.<1/><2/>Los tokens de esGMX que han sido convertidos a GMX permanecerán como tokens de GMX.<3/><4/>Para reclamar tokens de GMX sin retirarlos, utilice el botón \"Reclamar\" bajo la sección de Recompensas Totales.<5/><6/></0>"
 
-#: src/pages/Dashboard/DashboardV2.js
-msgid "<0>Total value of tokens in GLP pool ({chainName}).</0><1>Other websites may show a higher value as they add positions' collaterals to the GLP pool.</1>"
-msgstr ""
-
 #: src/lib/contracts/callContract.tsx
 #: src/lib/wallets/index.tsx
 msgid "<0>Your wallet is not connected to {0}.</0><1/><2>Switch to {1}</2>"
@@ -97,10 +81,6 @@ msgstr "APR"
 #: src/pages/Stake/StakeV2.js
 msgid "APRs are updated weekly on Wednesday and will depend on the fees collected for the week."
 msgstr "Los APRs se actualizan semanalmente en Miércoles, y dependerán de las comisiones cobradas en la semana."
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "AUM"
-msgstr "AUM"
 
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
@@ -287,7 +267,6 @@ msgid "Approving..."
 msgstr "Aprobando..."
 
 #: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
 msgid "Arbitrum APR:"
 msgstr "Arbitrum APR:"
 
@@ -298,10 +277,6 @@ msgstr "Como no hay liquidez suficiente en GLP para intercambiar {0} a {swapToke
 #: src/pages/Dashboard/DashboardV1.js
 msgid "Assets Under Management"
 msgstr "Activos Bajo Gestión"
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Assets Under Management: GMX staked (All chains) + GLP pool ({chainName})."
-msgstr "Activos bajo gestión: GMX stakeados (Todas las cadenas) + Reserva GLP ({chainName})."
 
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
@@ -332,11 +307,6 @@ msgstr "Disponible en su red preferida"
 #: src/components/Glp/GlpSwap.js
 msgid "Available:"
 msgstr "Disponible:"
-
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-msgid "Avalanche APR:"
-msgstr "Avalanche APR:"
 
 #: src/components/Exchange/SwapBox.js
 msgid "Balance"
@@ -436,10 +406,6 @@ msgstr ""
 msgid "Buy GMX on {0}"
 msgstr ""
 
-#: src/pages/Buy/Buy.js
-msgid "Buy GMX or GLP"
-msgstr "Comprar GMX o GLP"
-
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy GMX using Decentralized Exchange Aggregators:"
 msgstr ""
@@ -452,19 +418,17 @@ msgstr ""
 msgid "Buy GMX using any token from any network:"
 msgstr ""
 
+#: src/pages/Buy/Buy.js
+msgid "Buy Optimoon"
+msgstr ""
+
 #: src/components/Glp/GlpSwap.js
 msgid "Buy failed."
 msgstr "Compra fallida."
 
 #: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-msgid "Buy on Arbitrum"
-msgstr "Comprar en Arbitrum"
-
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-msgid "Buy on Avalanche"
-msgstr "Comprar en Avalanche"
+msgid "Buy on Uniswap"
+msgstr ""
 
 #: src/pages/BuyGMX/BuyGMX.tsx
 msgid "Buy or Transfer AVAX to Avalanche"
@@ -527,7 +491,6 @@ msgid "Cancel submitted."
 msgstr "Cancelación enviada."
 
 #: src/App/App.js
-#: src/pages/Exchange/Exchange.js
 msgid "Chart positions"
 msgstr "Posiciones en gráfca"
 
@@ -1043,10 +1006,6 @@ msgstr "Desconectar"
 msgid "Display PnL after fees"
 msgstr "Mostrar GyP después de comisiones"
 
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Distribution"
-msgstr "Distribución"
-
 #: src/components/Header/AppHeaderLinks.tsx
 #: src/components/Header/HomeHeaderLinks.tsx
 msgid "Docs"
@@ -1060,14 +1019,9 @@ msgstr "No muestres este mensaje de nuevo en los próximos 30 días."
 msgid "Download"
 msgstr "Descargar"
 
-#: src/components/Header/AppHeaderLinks.tsx
 #: src/pages/Stake/StakeV2.js
 msgid "Earn"
 msgstr "Ganar"
-
-#: src/components/Header/AppHeaderLinks.tsx
-msgid "Ecosystem"
-msgstr "Ecosistema"
 
 #: src/components/Exchange/OrdersList.js
 #: src/components/Exchange/OrdersList.js
@@ -1277,7 +1231,6 @@ msgstr "COMISIONES"
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/pages/Dashboard/DashboardV1.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Fees"
 msgstr "Comisiones"
 
@@ -1301,10 +1254,6 @@ msgstr "Las comisiones pueden variar dependiendo del activo por el que vendas GL
 msgid "Fees may vary depending on which asset you use to buy GLP. <0/>Enter the amount of GLP you want to purchase in the order form, then check here to compare fees."
 msgstr "Las comisiones pueden variar dependiendo del activo que uses para comprar GLP. <0/>Introduce la cantidad de GLP que quieres comprar en el formulario y compara aquí las diferentes comisiones."
 
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Fees since"
-msgstr "Comisiones desde"
-
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
 #: src/components/Glp/GlpSwap.js
@@ -1319,10 +1268,6 @@ msgstr "Obteniendo información de los tokens..."
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Financial reports and protocol analytics"
 msgstr "Reportes financieros y análisis de datos del protocolo"
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Floor Price Fund"
-msgstr "Fondo de Precio Mínimo"
 
 #: src/components/Exchange/ConfirmationBox.js
 msgid "Forfeit profit"
@@ -1345,14 +1290,6 @@ msgstr "Renuncia de ganancias no marcada"
 msgid "GBC NFTs APR tracker and rewards"
 msgstr "Rastreador de GBC NFTs APR y recompensas"
 
-#: src/pages/Dashboard/DashboardV2.js
-msgid "GLP Index Composition"
-msgstr "Composición Índice GLP"
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "GLP Pool"
-msgstr "Reserva de GLP"
-
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 msgid "GLP Vault"
@@ -1373,10 +1310,6 @@ msgstr "Compra de GLP desactivada, actualización {0} pendiente"
 #: src/components/Exchange/SwapBox.js
 msgid "GLP doesn't accept this amount of {0}."
 msgstr ""
-
-#: src/components/TokenCard/TokenCard.js
-msgid "GLP is the liquidity provider token. Accrues 70% of the platform's generated fees."
-msgstr "GLP es el token proveedor de liquidez. Acumula el 70% de las comisiones generadas por la plataforma."
 
 #: src/components/Glp/GlpSwap.js
 msgid "GLP sell disabled, pending {0} upgrade"
@@ -1451,10 +1384,6 @@ msgstr "GMX esta actualmente en vivo en Arbitrum y Avalanche."
 msgid "GMX is not actively looking for new hires at the moment. However, if you think you can contribute to the project, please email <0>jobs@gmx.io</0>."
 msgstr "GMX no se encuentra contratando en este momento. Sin embargo, si crees que puedes contribuir al proyecto, manda un email por favor <0>jobs@gmx.io</0>."
 
-#: src/components/TokenCard/TokenCard.js
-msgid "GMX is the utility and governance token. Accrues 30% of the platform's generated fees."
-msgstr "GMX es el token de utilidad y gobierno, y también acumula el 30% de las comisiones generadas por la plataforma."
-
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "GMX staking calculator"
 msgstr "Calculadora de GMX stakeado"
@@ -1477,8 +1406,8 @@ msgid "Generating shareable image..."
 msgstr "Generando imagen para compartir..."
 
 #: src/pages/Referrals/Referrals.js
-msgid "Get fee discounts and earn rebates through the GMX referral program.<0/>For more information, please read the <1>referral program details</1>."
-msgstr "Obtenga descuentos en las comisiones y gane reembolsos a través del programa de referidos de GMX.<0/>Para más información, por favor lea los <1>detalles del programa de referidos</1>."
+msgid "Get fee discounts and earn rebates through the Optimoon referral program.<0/>For more information, please read the <1>referral program details</1>."
+msgstr ""
 
 #: src/components/Header/HomeHeaderLinks.tsx
 msgid "Governance"
@@ -1649,7 +1578,6 @@ msgstr "Mantener el apalancamiento a {0}x"
 msgid "Language"
 msgstr "Idioma"
 
-#: src/components/Header/AppHeaderUser.tsx
 #: src/components/ModalViews/RedirectModal.js
 #: src/pages/Home/Home.js
 msgid "Launch App"
@@ -1800,11 +1728,6 @@ msgstr "Cargando..."
 msgid "Long"
 msgstr "Largo"
 
-#: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Long Positions"
-msgstr "Posiciones largas"
-
 #: src/pages/Dashboard/DashboardV1.js
 msgid "Long positions: {0} USD, Short positions: {1} USD, {volumeLabel} volume: {2} USD"
 msgstr "Posiciones largas: {0} USD, Posiciones cortas: {1} USD, {volumeLabel} volumen: {2} USD"
@@ -1825,11 +1748,6 @@ msgstr "Parece que no tienes un código de referido para compartir. <0/> ¡Crea 
 msgid "Loss"
 msgstr "Pérdida"
 
-#: src/components/BuyInputSection/BuyInputSection.js
-#: src/components/Exchange/PositionEditor.js
-#: src/components/Exchange/PositionSeller.js
-#: src/components/Exchange/SwapBox.js
-#: src/components/InputSection/InputSection.js
 #: src/pages/ClaimEsGmx/ClaimEsGmx.js
 msgid "MAX"
 msgstr "MÁX"
@@ -1867,8 +1785,6 @@ msgstr "Mercado"
 #: src/pages/Dashboard/DashboardV1.js
 #: src/pages/Dashboard/DashboardV1.js
 #: src/pages/Dashboard/DashboardV1.js
-#: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Market Cap"
 msgstr "Capitalización de Mercado"
 
@@ -1963,11 +1879,6 @@ msgstr "Máx: {0}"
 #: src/components/Exchange/PositionSeller.js
 msgid "Max: {maxAmountFormatted}"
 msgstr "Máx: {maxAmountFormatted}"
-
-#: src/components/Footer/constants.ts
-#: src/components/Footer/constants.ts
-msgid "Media Kit"
-msgstr "Kit de Medios"
 
 #: src/App/App.js
 msgid "MetaMask"
@@ -2179,6 +2090,10 @@ msgstr ""
 msgid "Opening..."
 msgstr "Abriendo..."
 
+#: src/components/TokenCard/TokenCard.js
+msgid "Opptimoon is the utility and governance token. Accrues 30% of the platform's generated fees."
+msgstr ""
+
 #: src/components/Exchange/OrdersList.js
 #: src/pages/OrdersOverview/OrdersOverview.js
 msgid "Order"
@@ -2257,10 +2172,6 @@ msgid "Overall protocol analytics"
 msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.js
-msgid "Overview"
-msgstr "Resumen"
-
-#: src/pages/Dashboard/DashboardV2.js
 msgid "POOL"
 msgstr "RESERVA"
 
@@ -2306,10 +2217,6 @@ msgstr "Importe a pagar"
 #: src/components/Exchange/SwapBox.js
 msgid "Pay: {0} USD"
 msgstr "Paga: {0} USD"
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Platform and GLP index tokens."
-msgstr "Plataforma y tokens del índice GLP"
 
 #: src/components/Referrals/JoinReferralCode.js
 msgid "Please input a referral code to benefit from fee discounts."
@@ -2392,8 +2299,6 @@ msgstr "Prev"
 #: src/pages/Dashboard/DashboardV1.js
 #: src/pages/Dashboard/DashboardV1.js
 #: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/OrdersOverview/OrdersOverview.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
@@ -2435,12 +2340,10 @@ msgstr "El precio se encuentra por encima del precio de referencia"
 msgid "Price is below Mark Price"
 msgstr "El precio se encuentra por debajo del precio de referencia"
 
-#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Stake/StakeV2.js
 msgid "Price on Arbitrum"
 msgstr "Precio en Arbitrum"
 
-#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Stake/StakeV2.js
 msgid "Price on Avalanche"
 msgstr "Precio en Avalanche"
@@ -2481,11 +2384,6 @@ msgstr "Comprar <0>GLP tokens</0> para ganar {nativeTokenSymbol} recompensas de 
 #: src/pages/Stake/StakeV2.js
 msgid "Purchase Insurance"
 msgstr "Comprar Seguro"
-
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-msgid "Read more"
-msgstr "Leer más"
 
 #: src/components/Referrals/TradersStats.js
 msgid "Rebates Distribution History"
@@ -2783,11 +2681,6 @@ msgstr "Compartir Posición"
 msgid "Short"
 msgstr "Corto"
 
-#: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Short Positions"
-msgstr "Posiciones en Corto"
-
 #: src/components/Exchange/SwapBox.js
 msgid "Short {0}"
 msgstr "Corto {0}"
@@ -2827,10 +2720,6 @@ msgstr "Deslizamiento"
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Spreadsheet for position calculations"
 msgstr ""
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Stablecoin Percentage"
-msgstr "Porcentaje de Stablecoin"
 
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
@@ -2883,7 +2772,6 @@ msgid "Stake submitted! <0>View status.</0>"
 msgstr "Stakeo enviado! <0>Ver estado.</0>"
 
 #: src/components/Glp/GlpSwap.js
-#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
@@ -2910,10 +2798,6 @@ msgstr "Tokens Stakeados"
 msgid "Staking..."
 msgstr "Stakeando..."
 
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Stats"
-msgstr "Estadísticas"
-
 #: src/pages/Ecosystem/Ecosystem.js
 msgid "Structured Products"
 msgstr "Productos Estructurados"
@@ -2925,8 +2809,6 @@ msgstr "Enviar"
 #: src/pages/Dashboard/DashboardV1.js
 #: src/pages/Dashboard/DashboardV1.js
 #: src/pages/Dashboard/DashboardV1.js
-#: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Supply"
 msgstr "Suministros"
 
@@ -3064,10 +2946,6 @@ msgstr "Bot de Telegram para actualización de posiciones GMX"
 msgid "Telegram bot for Open Interest on GMX"
 msgstr "Bot de Telegram para Interés Abierto en GMX "
 
-#: src/components/Footer/constants.ts
-msgid "Terms and Conditions"
-msgstr "Términos y Condiciones"
-
 #: src/pages/Stake/StakeV1.js
 msgid "The <0>GMX migration</0> is in progress, please migrate your GMT, xGMT, GMT-USDG and xGMT-USDG tokens.<1/>USDG tokens will continue to function as before and do not need to be migrated."
 msgstr "La <0>migración de GMX</0> está en marcha, por favor migra tus GMT, xGMT, GMT-USDG y xGMT-USDG tokens.<1/>Los USDG tokens continuarán funcionando como antes y no necesitan ser migrados."
@@ -3201,10 +3079,6 @@ msgstr "Para reducir las comisiones, seleccione un activo diferente con el que p
 msgid "To reduce fees, select a different asset to receive."
 msgstr "Para reducir las comisiones, seleccione un activo diferente para recibir."
 
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Tokens"
-msgstr "Tokens"
-
 #: src/pages/Stake/StakeV2.js
 msgid "Total"
 msgstr "Total"
@@ -3216,11 +3090,6 @@ msgstr "Activos Totales Migrados"
 #: src/pages/Stake/StakeV1.js
 msgid "Total Assets Staked"
 msgstr "Activos Totales Stakeados"
-
-#: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Total Fees"
-msgstr "Comisiones Totales"
 
 #: src/pages/Dashboard/DashboardV1.js
 msgid "Total Fees Distributed"
@@ -3236,8 +3105,6 @@ msgstr "Total de Reembolsos"
 msgid "Total Rewards"
 msgstr "Recompensas Totales"
 
-#: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
@@ -3248,10 +3115,6 @@ msgstr "Recompensas Totales"
 #: src/pages/Stake/StakeV2.js
 msgid "Total Staked"
 msgstr "Total Stakeado"
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "Total Stats"
-msgstr "Estadísticas Totales"
 
 #: src/components/Glp/GlpSwap.js
 #: src/pages/Stake/StakeV1.js
@@ -3277,8 +3140,6 @@ msgid "Total Users"
 msgstr "Usuarios Totales"
 
 #: src/components/Referrals/AffiliatesStats.js
-#: src/pages/Dashboard/DashboardV2.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Total Volume"
 msgstr "Volumen Total"
 
@@ -3592,7 +3453,6 @@ msgid "View status."
 msgstr "Ver estado."
 
 #: src/pages/Dashboard/DashboardV1.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Volume"
 msgstr "Volumen"
 
@@ -3875,21 +3735,9 @@ msgstr "comisión"
 msgid "hide"
 msgstr "ocultar"
 
-#: src/pages/Dashboard/DashboardV2.js
-msgid "in liquidity"
-msgstr "en liquidez"
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "not staked"
-msgstr "no stakeado"
-
 #: src/pages/PositionsOverview/PositionsOverview.js
 msgid "size"
 msgstr "tamaño"
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "staked"
-msgstr "stakeado"
 
 #: src/pages/PositionsOverview/PositionsOverview.js
 msgid "time to liq"
@@ -4029,10 +3877,6 @@ msgstr ""
 "{actionDisplay} {0} {longOrShortText},\n"
 "-{1} USD,\n"
 "{2} Precio: {3} USD"
-
-#: src/pages/Dashboard/DashboardV2.js
-msgid "{chainName} Total Stats start from {totalStatsStartDate}.<0/> For detailed stats:"
-msgstr "{chainName} Las estadísticas totales comienzan a partir de {totalStatsStartDate}.<0/> Para obtener estadísticas detalladas:"
 
 #: src/components/Exchange/ConfirmationBox.js
 msgid "{existingTriggerOrderLength, plural, one {You have an active trigger order that could impact this position.} other {You have # active trigger orders that could impact this position.}}"
