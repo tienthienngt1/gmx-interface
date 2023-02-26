@@ -47,7 +47,7 @@
 }
 .menu-item:hover {
   background: #808aff14 !important;
-  border-radius: 0.4rem;
+  border-radius: 10rem;
   opacity: 1;
   color: #eee;
 }

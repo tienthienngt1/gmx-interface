@@ -1,15 +1,15 @@
 .connect-wallet-btn {
-  background: transparent;
   padding: 0.5rem 1.4rem;
   display: inline-flex;
   align-items: center;
-  border: none;
   color: #fff;
   font-size: var(--font-sm);
   cursor: pointer;
-  border: 1px solid var(--dark-blue-border);
-  border-radius: var(--border-radius-sm);
-
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background-clip: padding-box;
+  background: linear-gradient(90deg, #16182e, #04354e) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  border: 1px solid transparent;
   .btn-icon {
     display: inline-flex;
     align-items: center;
@@ -22,7 +22,7 @@
     letter-spacing: 0;
   }
   &:hover {
-    background: var(--dark-blue-hover);
+    background: linear-gradient(90deg, #242b74, #05415f) padding-box, linear-gradient(90deg, red, yellow) border-box;
   }
   &:active {
     background: var(--dark-blue-active);

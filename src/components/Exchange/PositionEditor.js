@@ -533,7 +533,7 @@ export default function PositionEditor(props) {
                         value={fromValue}
                         onChange={(e) => setFromValue(e.target.value)}
                       />
-                      {fromValue !== maxAmountFormattedFree && maxAmount?.gt(0) && (
+                      {/* {fromValue !== maxAmountFormattedFree && maxAmount?.gt(0) && (
                         <div
                           className="Exchange-swap-max"
                           onClick={() => {
@@ -542,7 +542,7 @@ export default function PositionEditor(props) {
                         >
                           <Trans>MAX</Trans>
                         </div>
-                      )}
+                      )} */}
                     </div>
                     <div className="PositionEditor-token-symbol">
                       {isDeposit ? position.collateralToken.symbol : "USD"}

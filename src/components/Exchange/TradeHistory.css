@@ -4,6 +4,12 @@
   margin-bottom: 0.8rem;
 }
 
+.TradeHistory .TradeHistory-row.App-box {
+  border-radius: 20px;
+  background: linear-gradient(90deg, #030b22, #090120) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  border: 1px solid transparent;
+}
+
 .TradeHistory-time {
   font-size: 1.25rem;
   margin-bottom: 0.155rem;

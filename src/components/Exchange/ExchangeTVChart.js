@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef, useMemo } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import cx from "classnames";
 
 import { USD_DECIMALS, SWAP, INCREASE, CHART_PERIODS, getLiquidationPrice } from "lib/legacy";
@@ -146,8 +146,6 @@ export default function ExchangeTVChart(props) {
     return lines;
   }, [currentOrders, currentPositions]);
 
-  const ref = useRef(null);
-
   const currentAveragePrice =
     chartToken.maxPrice && chartToken.minPrice ? chartToken.maxPrice.add(chartToken.minPrice).div(2) : null;
   const [priceData, updatePriceData] = useChartPrices(
@@ -281,67 +279,71 @@ export default function ExchangeTVChart(props) {
   };
 
   return (
-    <div className="ExchangeChart tv" ref={ref}>
-      <div className="ExchangeChart-top App-box App-box-border">
-        <div className="ExchangeChart-top-inner">
-          <div>
-            <div className="ExchangeChart-title">
-              <ChartTokenSelector
-                chainId={chainId}
-                selectedToken={chartToken}
-                swapOption={swapOption}
-                infoTokens={infoTokens}
-                onSelectToken={onSelectToken}
-                className="chart-token-selector"
-              />
-            </div>
-          </div>
-          <div>
-            <div className="ExchangeChart-main-price">
-              {chartToken.maxPrice && formatAmount(chartToken.maxPrice, USD_DECIMALS, 2, true)}
-            </div>
-            <div className="ExchangeChart-info-label">
-              ${chartToken.minPrice && formatAmount(chartToken.minPrice, USD_DECIMALS, 2, true)}
-            </div>
-          </div>
-          <div>
-            <div className="ExchangeChart-info-label">24h Change</div>
-            <div className={cx({ positive: deltaPercentage > 0, negative: deltaPercentage < 0 })}>
-              {!deltaPercentageStr && "-"}
-              {deltaPercentageStr && deltaPercentageStr}
-            </div>
-          </div>
-          <div className="ExchangeChart-additional-info">
-            <div className="ExchangeChart-info-label">24h High</div>
+    <>
+      <>
+        <div className="ExchangeChart-top">
+          <div className="ExchangeChart-top-inner">
             <div>
-              {!high && "-"}
-              {high && numberWithCommas(high.toFixed(2))}
+              <div className="ExchangeChart-title">
+                <ChartTokenSelector
+                  chainId={chainId}
+                  selectedToken={chartToken}
+                  swapOption={swapOption}
+                  infoTokens={infoTokens}
+                  onSelectToken={onSelectToken}
+                  className="chart-token-selector"
+                />
+              </div>
             </div>
-          </div>
-          <div className="ExchangeChart-additional-info">
-            <div className="ExchangeChart-info-label">24h Low</div>
             <div>
-              {!low && "-"}
-              {low && numberWithCommas(low.toFixed(2))}
+              <div className="ExchangeChart-main-price">
+                {chartToken.maxPrice && formatAmount(chartToken.maxPrice, USD_DECIMALS, 2, true)}
+              </div>
+              <div className="ExchangeChart-info-label">
+                ${chartToken.minPrice && formatAmount(chartToken.minPrice, USD_DECIMALS, 2, true)}
+              </div>
+            </div>
+            <div>
+              <div className="ExchangeChart-info-label">24h Change</div>
+              <div className={cx({ positive: deltaPercentage > 0, negative: deltaPercentage < 0 })}>
+                {!deltaPercentageStr && "-"}
+                {deltaPercentageStr && deltaPercentageStr}
+              </div>
+            </div>
+            <div className="ExchangeChart-additional-info">
+              <div className="ExchangeChart-info-label">24h High</div>
+              <div>
+                {!high && "-"}
+                {high && numberWithCommas(high.toFixed(2))}
+              </div>
+            </div>
+            <div className="ExchangeChart-additional-info">
+              <div className="ExchangeChart-info-label">24h Low</div>
+              <div>
+                {!low && "-"}
+                {low && numberWithCommas(low.toFixed(2))}
+              </div>
             </div>
           </div>
         </div>
+      </>
+      <div className="ExchangeChart tv">
+        <div className="ExchangeChart-bottom">
+          {availableNetworksForChart.includes(chainId) && chartToken.symbol && chainId ? (
+            <TVChartContainer
+              chartLines={chartLines}
+              savedShouldShowPositionLines={savedShouldShowPositionLines}
+              symbol={chartToken.symbol}
+              chainId={chainId}
+              onSelectToken={onSelectToken}
+              period={period}
+              setPeriod={setPeriod}
+            />
+          ) : (
+            <p className="ExchangeChart-error">Sorry, chart is not supported on this network yet.</p>
+          )}
+        </div>
       </div>
-      <div className="ExchangeChart-bottom App-box App-box-border">
-        {availableNetworksForChart.includes(chainId) && chartToken.symbol && chainId ? (
-          <TVChartContainer
-            chartLines={chartLines}
-            savedShouldShowPositionLines={savedShouldShowPositionLines}
-            symbol={chartToken.symbol}
-            chainId={chainId}
-            onSelectToken={onSelectToken}
-            period={period}
-            setPeriod={setPeriod}
-          />
-        ) : (
-          <p className="ExchangeChart-error">Sorry, chart is not supported on this network yet.</p>
-        )}
-      </div>
-    </div>
+    </>
   );
 }

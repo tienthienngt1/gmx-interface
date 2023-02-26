@@ -4,10 +4,8 @@ import { Trans } from "@lingui/macro";
 import { Link } from "react-router-dom";
 
 import { HeaderLink } from "./HeaderLink";
-import "./Header.css";
 import { isHomeSite } from "lib/legacy";
 import ExternalLink from "components/ExternalLink/ExternalLink";
-import logoImg from "img/logo_GMX.svg";
 
 type Props = {
   small?: boolean;
@@ -29,7 +27,7 @@ export function AppHeaderLinks({
       {small && (
         <div className="App-header-links-header">
           <Link className="App-header-link-main" to="/">
-            <img src={logoImg} alt="GMX Logo" />
+            <img src="/logo.png" alt="Optimoon Logo" />
           </Link>
           <div
             className="App-header-menu-icon-block mobile-cross-menu"
@@ -44,17 +42,18 @@ export function AppHeaderLinks({
           to="/dashboard"
           redirectPopupTimestamp={redirectPopupTimestamp}
           showRedirectModal={showRedirectModal}
+          className="header-link-cus"
         >
           <Trans>Dashboard</Trans>
         </HeaderLink>
       </div>
       <div className="App-header-link-container">
-        <HeaderLink to="/earn" redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal}>
-          <Trans>Earn</Trans>
-        </HeaderLink>
-      </div>
-      <div className="App-header-link-container">
-        <HeaderLink to="/buy" redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal}>
+        <HeaderLink
+          className="header-link-cus"
+          to="/buy"
+          redirectPopupTimestamp={redirectPopupTimestamp}
+          showRedirectModal={showRedirectModal}
+        >
           <Trans>Buy</Trans>
         </HeaderLink>
       </div>
@@ -63,28 +62,20 @@ export function AppHeaderLinks({
           to="/referrals"
           redirectPopupTimestamp={redirectPopupTimestamp}
           showRedirectModal={showRedirectModal}
+          className="header-link-cus"
         >
           <Trans>Referrals</Trans>
         </HeaderLink>
       </div>
       <div className="App-header-link-container">
-        <HeaderLink
-          to="/ecosystem"
-          redirectPopupTimestamp={redirectPopupTimestamp}
-          showRedirectModal={showRedirectModal}
-        >
-          <Trans>Ecosystem</Trans>
-        </HeaderLink>
-      </div>
-      <div className="App-header-link-container">
-        <ExternalLink href="https://gmxio.gitbook.io/gmx/">
+        <ExternalLink href="https://gmxio.gitbook.io/gmx/" className="header-link-cus">
           <Trans>Docs</Trans>
         </ExternalLink>
       </div>
       {small && !isHomeSite() && (
         <div className="App-header-link-container">
           {/* eslint-disable-next-line */}
-          <a href="#" onClick={openSettings}>
+          <a href="#" className="header-link-cus" onClick={openSettings}>
             <Trans>Settings</Trans>
           </a>
         </div>

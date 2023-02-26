@@ -1,7 +1,6 @@
 import React from "react";
 import cx from "classnames";
 import "./Footer.css";
-import logoImg from "img/ic_gmx_footer.svg";
 import { NavLink } from "react-router-dom";
 import { isHomeSite, getAppBaseUrl, shouldShowRedirectModal } from "lib/legacy";
 import { getFooterLinks, SOCIAL_LINKS } from "./constants";
@@ -17,7 +16,8 @@ export default function Footer({ showRedirectModal, redirectPopupTimestamp }: Pr
     <div className="Footer">
       <div className={cx("Footer-wrapper", { home: isHome })}>
         <div className="Footer-logo">
-          <img src={logoImg} alt="MetaMask" />
+          <img src="/logo.png" alt="Optimoon logo" width={50} />
+          OPTIMOON
         </div>
         <div className="Footer-social-link-block">
           {SOCIAL_LINKS.map((platform) => {

@@ -22,10 +22,11 @@
   border-radius: 0.6rem;
   text-align: right;
   white-space: nowrap;
+  padding: 5px;
 }
 
 .TokenSelector-box:hover {
-  color: #7885ff;
+  background: linear-gradient(90deg, red, yellow);
 }
 
 .Token-info {
@@ -62,10 +63,11 @@
 
 .TokenSelector-token-row {
   cursor: pointer;
-  border: 1px solid #ffffff29;
+  background: linear-gradient(90deg, rgb(6, 6, 56), rgb(1, 2, 44)) padding-box,
+    linear-gradient(90deg, red, yellow) border-box;
+  border: 1px solid transparent;
   position: relative;
-  background: transparent;
-  border-radius: var(--border-radius-sm);
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,6 +104,10 @@
 
 .TokenSelector-token-row.TokenSelector-token-input-row {
   padding: 0;
+  border: none;
+  background: #0d0425;
+  padding: 1rem;
+  border-radius: 20px;
 }
 
 .TokenSelector-token-row input {
@@ -117,11 +123,12 @@
 }
 
 .TokenSelector-token-row:hover {
-  background: var(--dark-blue-hover);
+  opacity: 0.8;
 }
 
 .TokenSelector-token-row:active {
-  background: var(--dark-blue-active);
+  background: linear-gradient(to left, red, yellow) padding-box;
+  border: none;
 }
 
 .TokenSelector.right .Modal {

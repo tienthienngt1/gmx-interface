@@ -1900,11 +1900,11 @@ export default function SwapBox(props) {
                     value={fromValue}
                     onChange={onFromValueChange}
                   />
-                  {shouldShowMaxButton() && (
+                  {/* {shouldShowMaxButton() && (
                     <div className="Exchange-swap-max" onClick={setFromValueToMaximumAvailable}>
                       <Trans>MAX</Trans>
                     </div>
-                  )}
+                  )} */}
                 </div>
                 <div>
                   <TokenSelector

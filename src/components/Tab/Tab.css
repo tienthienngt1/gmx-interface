@@ -5,8 +5,6 @@
   border-radius: 3px;
   overflow: hidden;
   color: rgba(255, 255, 255, 0.7);
-  background: linear-gradient(90deg, rgba(30, 34, 61, 0.9) 0%, rgba(38, 43, 71, 0.9) 100%);
-  box-shadow: inset 0px 0px 30px 5px rgba(255, 255, 255, 0.01);
 }
 
 .Tab-option-icon {
@@ -16,21 +14,24 @@
 
 .Tab.block .Tab-option {
   text-align: center;
-  padding: 0.8rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 1rem 2rem;
+  margin: 0 10px;
   cursor: pointer;
+  background: linear-gradient(to right, rgb(2, 2, 41), rgb(44, 2, 2));
+  border-radius: 50px;
 }
 
 .Tab.block .Tab-option:hover {
   color: rgba(255, 255, 255, 1);
-  background: linear-gradient(90deg, rgba(35, 57, 172, 1) 0%, rgba(43, 59, 147, 1) 100%);
+  background: linear-gradient(to right, rgba(11, 11, 182, 0.993), rgb(172, 7, 7));
+  opacity: 0.5;
 }
 
 .Tab.block .Tab-option.active {
   opacity: 1;
   pointer-events: none;
-  background: linear-gradient(90deg, rgba(45, 66, 252, 1) 0%, rgba(46, 61, 205, 1) 100%);
+  background: linear-gradient(to right, #080336, #360322) padding-box, linear-gradient(to right, red, yellow) border-box;
+  border: 1px solid transparent;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -53,11 +54,26 @@
   cursor: pointer;
   display: inline-block;
   margin-right: 1.5rem;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #080336, #360322) padding-box;
+  font-size: var(--font-base);
+}
+
+.Tab.inline .Tab-option.active {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 1.5rem;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #080336, #360322) padding-box, linear-gradient(90deg, red, yellow) border-box;
   font-size: var(--font-base);
 }
 
 .Tab.inline .Tab-option:hover {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .Tab.inline .Tab-option.active {

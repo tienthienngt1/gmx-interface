@@ -1,12 +1,16 @@
 .App-header-network {
   position: relative;
   margin-left: 2.4rem;
-  border: 1px solid var(--dark-blue-border);
-  border-radius: var(--border-radius-sm);
+  border: 1px solid transparent;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #16182e, #04354e) padding-box, linear-gradient(90deg, red, yellow) border-box;
   height: 3.6rem;
   display: inline-flex;
   align-items: center;
   color: white;
+}
+.App-header-network:hover {
+  background: linear-gradient(90deg, #242b74, #05415f) padding-box, linear-gradient(90deg, red, yellow) border-box;
 }
 
 .App-header-language {
@@ -18,18 +22,21 @@
 }
 .network-dropdown-items {
   min-width: 17rem;
-  padding-bottom: 0.8rem;
+  padding: 5px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #14173f, #032536) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  border: 1px solid transparent;
 }
 .network-dropdown-items:last-child {
   padding-bottom: 0;
 }
 
 .network-dropdown-divider {
-  margin-bottom: 0.8rem;
-  border-bottom: 1px solid #ffffff29;
+  margin: 0.8rem;
+  background: linear-gradient(90deg, #14173f, #032536) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  border-bottom: 1px solid transparent;
 }
 .network-dropdown:hover {
-  background: var(--dark-blue-hover);
   cursor: pointer;
 }
 .network-dropdown:active {
@@ -60,7 +67,7 @@
 
 .network-dropdown-seperator {
   width: 1px;
-  background: var(--dark-blue-border);
+  background: linear-gradient(180deg, red, yellow);
   margin: 0.8rem 0;
 }
 
@@ -121,6 +128,9 @@
   color: #a0a3c4;
   padding: 0.8rem;
   font-size: 1.25rem;
+  background: linear-gradient(90deg, #14173f, #032536) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  border-bottom: 1px solid transparent;
+  margin-bottom: 5px;
 }
 
 .language-popup .Modal-body {
@@ -135,7 +145,8 @@
 }
 
 .language-modal-item.active {
-  border: 1px solid #a1a3c4;
+  background: linear-gradient(to right, #1b1f4b, #1b1f4b) padding-box, linear-gradient(to right, red, yellow) border-box;
+  border: 1px solid transparent;
 }
 
 .menu-item-icon {
