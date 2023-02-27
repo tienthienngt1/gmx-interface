@@ -67,7 +67,7 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
         </div>
         <div className="Home-token-card-option-info">
           <div className="Home-token-card-option-title">
-            <Trans>Opptimoon is the utility and governance token. Accrues 30% of the platform's generated fees.</Trans>
+            <Trans>Optimoon is the utility and governance token. Accrues 30% of the platform's generated fees.</Trans>
           </div>
           <div className="Home-token-card-option-apr">
             <Trans>Arbitrum APR:</Trans> <APRLabel chainId={ARBITRUM} label="gmxAprTotal" />,{" "}

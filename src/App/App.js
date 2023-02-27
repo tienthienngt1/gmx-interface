@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { SWRConfig } from "swr";
 import { ethers } from "ethers";
 import { Web3ReactProvider, useWeb3React } from "@web3-react/core";
@@ -11,28 +11,14 @@ import {
   DEFAULT_SLIPPAGE_AMOUNT,
   BASIS_POINTS_DIVISOR,
   getAppBaseUrl,
-  isHomeSite,
   isMobileDevice,
   REFERRAL_CODE_QUERY_PARAM,
 } from "lib/legacy";
 
-import Home from "pages/Home/Home";
 import Dashboard from "pages/Dashboard/Dashboard";
-import Ecosystem from "pages/Ecosystem/Ecosystem";
-import Stake from "pages/Stake/Stake";
 import { Exchange } from "pages/Exchange/Exchange";
-import Actions from "pages/Actions/Actions";
-import OrdersOverview from "pages/OrdersOverview/OrdersOverview";
-import PositionsOverview from "pages/PositionsOverview/PositionsOverview";
 import Referrals from "pages/Referrals/Referrals";
-import BuyGlp from "pages/BuyGlp/BuyGlp";
-import BuyGMX from "pages/BuyGMX/BuyGMX";
 import Buy from "pages/Buy/Buy";
-import NftWallet from "pages/NftWallet/NftWallet";
-import ClaimEsGmx from "pages/ClaimEsGmx/ClaimEsGmx";
-import BeginAccountTransfer from "pages/BeginAccountTransfer/BeginAccountTransfer";
-import CompleteAccountTransfer from "pages/CompleteAccountTransfer/CompleteAccountTransfer";
-
 import { cssTransition, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Modal from "components/Modal/Modal";
@@ -42,6 +28,8 @@ import "styles/Shared.css";
 import "styles/Font.css";
 import "./App.scss";
 import "styles/Input.css";
+import "pages/Home/Home.css";
+import "components/Glp/GlpSwap.css";
 
 import metamaskImg from "img/metamask.png";
 import coinbaseImg from "img/coinbaseWallet.png";
@@ -57,12 +45,9 @@ import VaultV2 from "abis/VaultV2.json";
 import VaultV2b from "abis/VaultV2b.json";
 import PositionRouter from "abis/PositionRouter.json";
 import PageNotFound from "pages/PageNotFound/PageNotFound";
-import ReferralTerms from "pages/ReferralTerms/ReferralTerms";
-import TermsAndConditions from "pages/TermsAndConditions/TermsAndConditions";
 import { useLocalStorage, useMedia } from "react-use";
 import { RedirectPopupModal } from "components/ModalViews/RedirectModal";
 import { REDIRECT_POPUP_TIMESTAMP_KEY } from "config/localStorage";
-import Jobs from "pages/Jobs/Jobs";
 
 import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
@@ -136,7 +121,6 @@ function getWsProvider(active, chainId) {
 }
 
 function FullApp() {
-  const isHome = isHomeSite();
   const exchangeRef = useRef();
   const { connector, library, deactivate, activate, active } = useWeb3React();
   const { chainId } = useChainId();
@@ -443,107 +427,45 @@ function FullApp() {
             redirectPopupTimestamp={redirectPopupTimestamp}
             showRedirectModal={showRedirectModal}
           />
-          {isHome && (
-            <Switch>
-              <Route exact path="/">
-                <Home showRedirectModal={showRedirectModal} redirectPopupTimestamp={redirectPopupTimestamp} />
-              </Route>
-              <Route exact path="/referral-terms">
-                <ReferralTerms />
-              </Route>
-              <Route exact path="/terms-and-conditions">
-                <TermsAndConditions />
-              </Route>
-              <Route path="*">
-                <PageNotFound />
-              </Route>
-            </Switch>
-          )}
-          {!isHome && (
-            <Switch>
-              <Route exact path="/">
-                <Redirect to="/dashboard" />
-              </Route>
-              <Route exact path="/trade">
-                <Exchange
-                  ref={exchangeRef}
-                  savedShowPnlAfterFees={savedShowPnlAfterFees}
-                  savedIsPnlInLeverage={savedIsPnlInLeverage}
-                  setSavedIsPnlInLeverage={setSavedIsPnlInLeverage}
-                  savedSlippageAmount={savedSlippageAmount}
-                  setPendingTxns={setPendingTxns}
-                  pendingTxns={pendingTxns}
-                  savedShouldShowPositionLines={savedShouldShowPositionLines}
-                  setSavedShouldShowPositionLines={setSavedShouldShowPositionLines}
-                  connectWallet={connectWallet}
-                  savedShouldDisableValidationForTesting={savedShouldDisableValidationForTesting}
-                />
-              </Route>
-              <Route exact path="/dashboard">
-                <Dashboard />
-              </Route>
-              <Route exact path="/earn">
-                <Stake setPendingTxns={setPendingTxns} connectWallet={connectWallet} />
-              </Route>
-              <Route exact path="/buy">
-                <Buy
-                  savedSlippageAmount={savedSlippageAmount}
-                  setPendingTxns={setPendingTxns}
-                  connectWallet={connectWallet}
-                />
-              </Route>
-              <Route exact path="/buy_glp">
-                <BuyGlp
-                  savedSlippageAmount={savedSlippageAmount}
-                  setPendingTxns={setPendingTxns}
-                  connectWallet={connectWallet}
-                  savedShouldDisableValidationForTesting={savedShouldDisableValidationForTesting}
-                />
-              </Route>
-              <Route exact path="/jobs">
-                <Jobs />
-              </Route>
-              <Route exact path="/buy_gmx">
-                <BuyGMX />
-              </Route>
-              <Route exact path="/ecosystem">
-                <Ecosystem />
-              </Route>
-              <Route exact path="/referrals">
-                <Referrals pendingTxns={pendingTxns} connectWallet={connectWallet} setPendingTxns={setPendingTxns} />
-              </Route>
-              <Route exact path="/referrals/:account">
-                <Referrals pendingTxns={pendingTxns} connectWallet={connectWallet} setPendingTxns={setPendingTxns} />
-              </Route>
-              <Route exact path="/nft_wallet">
-                <NftWallet />
-              </Route>
-              <Route exact path="/claim_es_gmx">
-                <ClaimEsGmx setPendingTxns={setPendingTxns} />
-              </Route>
-              <Route exact path="/actions">
-                <Actions />
-              </Route>
-              <Route exact path="/actions/:account">
-                <Actions savedIsPnlInLeverage={savedIsPnlInLeverage} savedShowPnlAfterFees={savedShowPnlAfterFees} />
-              </Route>
-              <Route exact path="/orders_overview">
-                <OrdersOverview />
-              </Route>
-              <Route exact path="/positions_overview">
-                <PositionsOverview />
-              </Route>
-              <Route exact path="/begin_account_transfer">
-                <BeginAccountTransfer setPendingTxns={setPendingTxns} />
-              </Route>
-              <Route exact path="/complete_account_transfer/:sender/:receiver">
-                <CompleteAccountTransfer setPendingTxns={setPendingTxns} />
-              </Route>
-              <Route path="*">
-                <PageNotFound />
-              </Route>
-            </Switch>
-          )}
+          <Switch>
+            <Route exact path="/">
+              <Redirect to="/dashboard" />
+            </Route>
+            <Route exact path="/trade">
+              <Exchange
+                ref={exchangeRef}
+                savedShowPnlAfterFees={savedShowPnlAfterFees}
+                savedIsPnlInLeverage={savedIsPnlInLeverage}
+                setSavedIsPnlInLeverage={setSavedIsPnlInLeverage}
+                savedSlippageAmount={savedSlippageAmount}
+                setPendingTxns={setPendingTxns}
+                pendingTxns={pendingTxns}
+                savedShouldShowPositionLines={savedShouldShowPositionLines}
+                setSavedShouldShowPositionLines={setSavedShouldShowPositionLines}
+                connectWallet={connectWallet}
+                savedShouldDisableValidationForTesting={savedShouldDisableValidationForTesting}
+              />
+            </Route>
+            <Route exact path="/dashboard">
+              <Dashboard />
+            </Route>
+            <Route exact path="/buy">
+              <Buy
+                savedSlippageAmount={savedSlippageAmount}
+                setPendingTxns={setPendingTxns}
+                connectWallet={connectWallet}
+              />
+            </Route>
+            <Route exact path="/referrals">
+              <Referrals pendingTxns={pendingTxns} connectWallet={connectWallet} setPendingTxns={setPendingTxns} />
+            </Route>
+            <Route exact path="/referrals/:account">
+              <Referrals pendingTxns={pendingTxns} connectWallet={connectWallet} setPendingTxns={setPendingTxns} />
+            </Route>
+            <Route path="*">
+              <PageNotFound />
+            </Route>
+          </Switch>
         </div>
       </div>
       <ToastContainer
