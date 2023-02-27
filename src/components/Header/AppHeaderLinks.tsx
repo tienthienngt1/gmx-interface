@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FiX } from "react-icons/fi";
 import { Trans } from "@lingui/macro";
 import { Link } from "react-router-dom";
@@ -22,6 +22,12 @@ export function AppHeaderLinks({
   redirectPopupTimestamp,
   showRedirectModal,
 }: Props) {
+  const [url, setUrl] = useState<string>("");
+  useEffect(() => {
+    if (window) {
+      setUrl(window.location.hostname);
+    }
+  }, []);
   return (
     <div className="App-header-links">
       {small && (
@@ -47,31 +53,37 @@ export function AppHeaderLinks({
           <Trans>Dashboard</Trans>
         </HeaderLink>
       </div>
+      {url.includes("private-test") && (
+        <>
+          <div className="App-header-link-container">
+            <HeaderLink
+              className="header-link-cus"
+              to="/buy"
+              redirectPopupTimestamp={redirectPopupTimestamp}
+              showRedirectModal={showRedirectModal}
+            >
+              <Trans>Buy</Trans>
+            </HeaderLink>
+          </div>
+          <div className="App-header-link-container">
+            <HeaderLink
+              to="/referrals"
+              redirectPopupTimestamp={redirectPopupTimestamp}
+              showRedirectModal={showRedirectModal}
+              className="header-link-cus"
+            >
+              <Trans>Referrals</Trans>
+            </HeaderLink>
+          </div>
+        </>
+      )}
+
       <div className="App-header-link-container">
-        <HeaderLink
-          className="header-link-cus"
-          to="/buy"
-          redirectPopupTimestamp={redirectPopupTimestamp}
-          showRedirectModal={showRedirectModal}
-        >
-          <Trans>Buy</Trans>
-        </HeaderLink>
-      </div>
-      <div className="App-header-link-container">
-        <HeaderLink
-          to="/referrals"
-          redirectPopupTimestamp={redirectPopupTimestamp}
-          showRedirectModal={showRedirectModal}
-          className="header-link-cus"
-        >
-          <Trans>Referrals</Trans>
-        </HeaderLink>
-      </div>
-      <div className="App-header-link-container">
-        <ExternalLink href="https://optimoon.gitbook.io/optimoon/" className="header-link-cus">
+        <ExternalLink href="https://docs.optimoondex.com" className="header-link-cus">
           <Trans>Docs</Trans>
         </ExternalLink>
       </div>
+
       {small && !isHomeSite() && (
         <div className="App-header-link-container">
           {/* eslint-disable-next-line */}

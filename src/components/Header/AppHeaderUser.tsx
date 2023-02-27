@@ -1,7 +1,7 @@
 import { useWeb3React } from "@web3-react/core";
 import AddressDropdown from "../AddressDropdown/AddressDropdown";
 import ConnectWalletButton from "../Common/ConnectWalletButton";
-import React, { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { HeaderLink } from "./HeaderLink";
 import connectWalletImg from "img/ic_wallet_24.svg";
 
@@ -66,6 +66,14 @@ export function AppHeaderUser({
   const { chainId } = useChainId();
   const { active, account } = useWeb3React();
   const showConnectionOptions = !isHomeSite();
+  const [url, setUrl] = useState<string>("");
+
+  //==================TEST========
+  useEffect(() => {
+    if (window) {
+      setUrl(window.location.hostname);
+    }
+  }, []);
 
   useEffect(() => {
     if (active) {
@@ -88,16 +96,18 @@ export function AppHeaderUser({
   if (!active || !account) {
     return (
       <div className="App-header-user">
-        <div className={cx("App-header-trade-link", { "homepage-header": isHomeSite() })}>
-          <HeaderLink
-            className="default-btn"
-            to="/trade"
-            redirectPopupTimestamp={redirectPopupTimestamp}
-            showRedirectModal={showRedirectModal}
-          >
-            <Trans>Trade</Trans>
-          </HeaderLink>
-        </div>
+        {url.includes("private-test") && (
+          <div className={cx("App-header-trade-link", { "homepage-header": isHomeSite() })}>
+            <HeaderLink
+              className="default-btn"
+              to="/trade"
+              redirectPopupTimestamp={redirectPopupTimestamp}
+              showRedirectModal={showRedirectModal}
+            >
+              <Trans>Trade</Trans>
+            </HeaderLink>
+          </div>
+        )}
 
         {showConnectionOptions ? (
           <>

@@ -7,9 +7,10 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <>404 NOT FOUND</>
+    {/* <Router>
       <App />
-    </Router>
+    </Router> */}
   </React.StrictMode>,
   document.getElementById("root")
 );

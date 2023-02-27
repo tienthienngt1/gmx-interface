@@ -70,16 +70,13 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
             <Trans>Optimoon is the utility and governance token. Accrues 30% of the platform's generated fees.</Trans>
           </div>
           <div className="Home-token-card-option-apr">
-            <Trans>Arbitrum APR:</Trans> <APRLabel chainId={ARBITRUM} label="gmxAprTotal" />,{" "}
+            <Trans>Arbitrum APR:</Trans> <APRLabel chainId={ARBITRUM} label="OPMAprTotal" />,{" "}
           </div>
           <div className="Home-token-card-option-action">
             <div className="buy">
               <ExternalLink to="https://app.sushi.com" className="default-btn" network={ARBITRUM}>
                 <Trans>Buy on Uniswap</Trans>
               </ExternalLink>
-              {/* <BuyLink to="/buy_gmx" className="default-btn" network={AVALANCHE}>
-                <Trans>Buy on Avalanche</Trans>
-              </BuyLink> */}
             </div>
           </div>
         </div>

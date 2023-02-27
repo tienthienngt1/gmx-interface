@@ -31,7 +31,7 @@ export const IS_NETWORK_DISABLED = {
 export const CHAIN_NAMES_MAP = {
   [MAINNET]: "BSC",
   [TESTNET]: "BSC Testnet",
-  [ARBITRUM_TESTNET]: "ArbRinkeby",
+  //   [ARBITRUM_TESTNET]: "ArbRinkeby",
   [ARBITRUM]: "Arbitrum",
   [AVALANCHE]: "Avalanche",
   [AVALANCHE_FUJI]: "Avalanche Fuji",

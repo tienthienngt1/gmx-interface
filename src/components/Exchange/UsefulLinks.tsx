@@ -12,7 +12,7 @@ export default function UsefulLinks({ className }) {
       <div className="App-card-divider"></div>
       <div className="Exchange-info-row">
         <div className="Exchange-info-label-button">
-          <ExternalLink href="https://optimoon.gitbook.io/optimoon/trading">
+          <ExternalLink href="https://docs.optimoondex.com/trading">
             <Trans>Trading guide</Trans>
           </ExternalLink>
         </div>

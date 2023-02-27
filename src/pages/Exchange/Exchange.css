@@ -277,6 +277,7 @@
 .ExchangeChart-top-inner > div {
   padding: 0.7rem 1rem;
   border-radius: 5px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
