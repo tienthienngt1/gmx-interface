@@ -19,8 +19,8 @@ function PageNotFound() {
             </h2>
             <p className="go-back">
               <Trans>
-                <span>Return to </span>
-                <a href={homeUrl}>Homepage</a> <span>or </span> <a href={tradePageUrl}>Trade</a>
+                <span style={{ color: "white" }}>Return to </span>
+                <a href={homeUrl}>Homepage</a>
               </Trans>
             </p>
           </div>
