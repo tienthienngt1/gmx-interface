@@ -114,6 +114,53 @@ function DesktopDropdown({ setActiveModal, selectorLabel, networkOptions, onNetw
               selectorLabel={selectorLabel}
               onNetworkSelect={onNetworkSelect}
             />
+            <Menu.Item>
+              <div className="network-dropdown-menu-item menu-item">
+                <div className="menu-item-group">
+                  <div className="menu-item-icon">
+                    <img className="network-dropdown-icon" src={"/logo.png"} alt={"optimism"} />
+                  </div>
+                  <span className="network-dropdown-item-label">Optimism</span>
+                </div>
+                <div className="network-dropdown-menu-item-img">
+                  <div className={cx("active-dot", { [selectorLabel]: selectorLabel === "Optimism" })} />
+                </div>
+              </div>
+            </Menu.Item>
+            <Menu.Item>
+              <div className="network-dropdown-menu-item menu-item">
+                <div className="menu-item-group">
+                  <div className="menu-item-icon">
+                    <img
+                      className="network-dropdown-icon"
+                      src={"https://upload.wikimedia.org/wikipedia/commons/0/05/Ethereum_logo_2014.svg"}
+                      alt={"ethereum"}
+                    />
+                  </div>
+                  <span className="network-dropdown-item-label">Ethereum</span>
+                </div>
+                <div className="network-dropdown-menu-item-img">
+                  <div className={cx("active-dot", { [selectorLabel]: selectorLabel === "ethereum" })} />
+                </div>
+              </div>
+            </Menu.Item>
+            <Menu.Item>
+              <div className="network-dropdown-menu-item menu-item">
+                <div className="menu-item-group">
+                  <div className="menu-item-icon">
+                    <img
+                      className="network-dropdown-icon"
+                      src={"https://bscscan.com/images/svg/brands/bnb.svg?v=1.3"}
+                      alt={"binance"}
+                    />
+                  </div>
+                  <span className="network-dropdown-item-label">BSC</span>
+                </div>
+                <div className="network-dropdown-menu-item-img">
+                  <div className={cx("active-dot", { [selectorLabel]: selectorLabel === "bsc" })} />
+                </div>
+              </div>
+            </Menu.Item>
           </div>
           <div className="network-dropdown-divider" />
           <Menu.Item>
@@ -201,6 +248,13 @@ function NetworkModalContent({ networkOptions, onNetworkSelect, selectorLabel, s
             </div>
           );
         })}
+        <div className="network-option">
+          <div className="menu-item-group">
+            <img src="/logo.png" alt={"optimism"} />
+            <span>Optimism</span>
+          </div>
+          <div className={cx("active-dot", { [selectorLabel]: selectorLabel === "optimism" })} />
+        </div>
         <span className="network-dropdown-label more-options">
           <Trans>More Options</Trans>
         </span>
