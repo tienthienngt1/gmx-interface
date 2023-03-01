@@ -51,14 +51,6 @@ export function AppHeaderUser({
   const { chainId } = useChainId();
   const { active, account } = useWeb3React();
   const showConnectionOptions = !isHomeSite();
-  const [url, setUrl] = useState<string>("");
-
-  //==================TEST========
-  useEffect(() => {
-    if (window) {
-      setUrl(window.location.hostname);
-    }
-  }, []);
 
   useEffect(() => {
     if (active) {
@@ -81,7 +73,6 @@ export function AppHeaderUser({
   if (!active || !account) {
     return (
       <div className="App-header-user">
-        {url.includes("private-test") && (
           <div className={cx("App-header-trade-link", { "homepage-header": isHomeSite() })}>
             <HeaderLink
               className="default-btn"
@@ -92,7 +83,6 @@ export function AppHeaderUser({
               <Trans>Trade</Trans>
             </HeaderLink>
           </div>
-        )}
 
         {showConnectionOptions ? (
           <>
