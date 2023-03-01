@@ -256,14 +256,6 @@ function FullApp() {
   const [shouldDisableValidationForTesting, setShouldDisableValidationForTesting] = useState(false);
   const [showPnlAfterFees, setShowPnlAfterFees] = useState(true);
 
-  //============TEST===========
-  const [url, setUrl] = useState("");
-  useEffect(() => {
-    if (window) {
-      setUrl(window.location.hostname);
-    }
-  }, []);
-
   const [savedIsPnlInLeverage, setSavedIsPnlInLeverage] = useLocalStorageSerializeKey(
     [chainId, IS_PNL_IN_LEVERAGE_KEY],
     false
@@ -443,40 +435,36 @@ function FullApp() {
             <Route exact path="/dashboard">
               <Dashboard />
             </Route>
-
-            {/* ===============TEST=============== */}
-            {url.includes("private") && (
-              <>
-                <Route exact path="/trade">
-                  <Exchange
-                    ref={exchangeRef}
-                    savedShowPnlAfterFees={savedShowPnlAfterFees}
-                    savedIsPnlInLeverage={savedIsPnlInLeverage}
-                    setSavedIsPnlInLeverage={setSavedIsPnlInLeverage}
-                    savedSlippageAmount={savedSlippageAmount}
-                    setPendingTxns={setPendingTxns}
-                    pendingTxns={pendingTxns}
-                    savedShouldShowPositionLines={savedShouldShowPositionLines}
-                    setSavedShouldShowPositionLines={setSavedShouldShowPositionLines}
-                    connectWallet={connectWallet}
-                    savedShouldDisableValidationForTesting={savedShouldDisableValidationForTesting}
-                  />
-                </Route>
-                <Route exact path="/buy">
-                  <Buy
-                    savedSlippageAmount={savedSlippageAmount}
-                    setPendingTxns={setPendingTxns}
-                    connectWallet={connectWallet}
-                  />
-                </Route>
-                <Route exact path="/referrals">
-                  <Referrals pendingTxns={pendingTxns} connectWallet={connectWallet} setPendingTxns={setPendingTxns} />
-                </Route>
-                <Route exact path="/referrals/:account">
-                  <Referrals pendingTxns={pendingTxns} connectWallet={connectWallet} setPendingTxns={setPendingTxns} />
-                </Route>
-              </>
-            )}
+            <>
+              <Route exact path="/trade">
+                <Exchange
+                  ref={exchangeRef}
+                  savedShowPnlAfterFees={savedShowPnlAfterFees}
+                  savedIsPnlInLeverage={savedIsPnlInLeverage}
+                  setSavedIsPnlInLeverage={setSavedIsPnlInLeverage}
+                  savedSlippageAmount={savedSlippageAmount}
+                  setPendingTxns={setPendingTxns}
+                  pendingTxns={pendingTxns}
+                  savedShouldShowPositionLines={savedShouldShowPositionLines}
+                  setSavedShouldShowPositionLines={setSavedShouldShowPositionLines}
+                  connectWallet={connectWallet}
+                  savedShouldDisableValidationForTesting={savedShouldDisableValidationForTesting}
+                />
+              </Route>
+              <Route exact path="/buy">
+                <Buy
+                  savedSlippageAmount={savedSlippageAmount}
+                  setPendingTxns={setPendingTxns}
+                  connectWallet={connectWallet}
+                />
+              </Route>
+              <Route exact path="/referrals">
+                <Referrals pendingTxns={pendingTxns} connectWallet={connectWallet} setPendingTxns={setPendingTxns} />
+              </Route>
+              <Route exact path="/referrals/:account">
+                <Referrals pendingTxns={pendingTxns} connectWallet={connectWallet} setPendingTxns={setPendingTxns} />
+              </Route>
+            </>
             <Route path="*">
               <PageNotFound />
             </Route>
