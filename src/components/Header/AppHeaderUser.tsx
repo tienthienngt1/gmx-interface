@@ -108,7 +108,7 @@ export function AppHeaderUser({
 
   return (
     <div className="App-header-user">
-      {url.includes("private-test") && (
+      
         <div className={cx("App-header-trade-link", { "homepage-header": isHomeSite() })}>
           <HeaderLink
             className="default-btn"
@@ -119,7 +119,7 @@ export function AppHeaderUser({
             <Trans>Trade</Trans>
           </HeaderLink>
         </div>
-      )}
+      
 
       {showConnectionOptions ? (
         <>
