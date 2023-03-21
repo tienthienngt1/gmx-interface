@@ -94,7 +94,7 @@ export function Header({
         <div className="App-header large">
           <div className="App-header-container-left">
             <Link className="App-header-link-main" to="/">
-              <img src="/logo.png" className="big" alt="Optimoon Logo" />
+              <img src="/logo.png" className="big" alt="Clicker Logo" />
             </Link>
             {isHomeSite() ? (
               <HomeHeaderLinks redirectPopupTimestamp={redirectPopupTimestamp} showRedirectModal={showRedirectModal} />
@@ -124,8 +124,8 @@ export function Header({
                 {isDrawerVisible && <FaTimes className="App-header-menu-icon" />}
               </div>
               <div className="App-header-link-main clickable" onClick={() => setIsDrawerVisible(!isDrawerVisible)}>
-                <img src="/logo.png" className="big" alt="Optimoon Logo" />
-                <img src="/logo.png" className="small" alt="Optimoon Logo" />
+                <img src="/logo.png" className="big" alt="Clicker Logo" />
+                <img src="/logo.png" className="small" alt="Clicker Logo" />
               </div>
             </div>
             <div className="App-header-container-right">

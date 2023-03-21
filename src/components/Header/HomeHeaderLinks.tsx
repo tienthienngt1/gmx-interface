@@ -32,10 +32,10 @@ const HOME_MENUS: HomeLink[] = [
     label: t`Voting`,
     link: "https://snapshot.org/#/gmx.eth",
   },
-  {
-    label: t`Docs`,
-    link: "https://optimoon.gitbook.io/optimoon/",
-  },
+//   {
+//     label: t`Docs`,
+//     link: "https://optimoon.gitbook.io/optimoon/",
+//   },
 ];
 
 export function HomeHeaderLinks({ small, clickCloseIcon, redirectPopupTimestamp, showRedirectModal }: Props) {
@@ -44,7 +44,7 @@ export function HomeHeaderLinks({ small, clickCloseIcon, redirectPopupTimestamp,
       {small && (
         <div className="App-header-links-header">
           <Link className="App-header-link-main" to="/">
-            <img src="/logo.png" alt="Optimoon Logo" />
+            <img src="/logo.png" alt="Clicker Logo" />
           </Link>
           <div
             className="App-header-menu-icon-block mobile-cross-menu"

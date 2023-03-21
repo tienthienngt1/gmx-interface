@@ -63,11 +63,11 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
     <div className="Home-token-card-options">
       <div className="Home-token-card-option">
         <div className="Home-token-card-option-icon">
-          <img src="/logo.png" width="40" alt="Optimoon Icons" /> Optimoon
+          <img src="/logo.png" width="40" alt="Clicker Icons" /> Clicker
         </div>
         <div className="Home-token-card-option-info">
           <div className="Home-token-card-option-title">
-            <Trans>Optimoon is the utility and governance token. Accrues 30% of the platform's generated fees.</Trans>
+            <Trans>Clicker is the utility and governance token. Accrues 30% of the platform's generated fees.</Trans>
           </div>
           <div className="Home-token-card-option-action">
             <div className="buy">

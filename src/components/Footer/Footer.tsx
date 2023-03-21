@@ -16,8 +16,8 @@ export default function Footer({ showRedirectModal, redirectPopupTimestamp }: Pr
     <div className="Footer">
       <div className={cx("Footer-wrapper", { home: isHome })}>
         <div className="Footer-logo">
-          <img src="/logo.png" alt="Optimoon logo" width={50} />
-          OPTIMOON
+          <img src="/logo.png" alt="Clicker logo" width={50} />
+          CLICKER
         </div>
         <div className="Footer-social-link-block">
           {SOCIAL_LINKS.map((platform) => {

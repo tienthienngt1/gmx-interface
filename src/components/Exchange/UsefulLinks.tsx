@@ -11,11 +11,11 @@ export default function UsefulLinks({ className }) {
       </div>
       <div className="App-card-divider"></div>
       <div className="Exchange-info-row">
-        <div className="Exchange-info-label-button">
+        {/* <div className="Exchange-info-label-button">
           <ExternalLink href="https://docs.optimoondex.com/trading">
             <Trans>Trading guide</Trans>
           </ExternalLink>
-        </div>
+        </div> */}
       </div>
     </div>
   );

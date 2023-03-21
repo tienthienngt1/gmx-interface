@@ -9,15 +9,15 @@ import { getPageTitle } from "lib/legacy";
 export default function BuyGMXGLP() {
   return (
     <SEO title={getPageTitle("Buy GLP or GMX")}>
-      <div className="BuyOptimoon page-layout">
-        <div className="BuyOptimoon-container default-container">
+      <div className="BuyClicker page-layout">
+        <div className="BuyClicker-container default-container">
           <div className="section-title-block">
             <div className="section-title-icon">
-              <img src={buyGMXIcon} alt="buyOptimoonIcon" />
+              <img src={buyGMXIcon} alt="clicker Icon" />
             </div>
             <div className="section-title-content">
               <div className="Page-title">
-                <Trans>Buy Optimoon</Trans>
+                <Trans>Buy Clicker</Trans>
               </div>
             </div>
           </div>

@@ -1,12 +1,12 @@
-.BuyOptimoon {
+.BuyClicker {
   justify-content: space-between;
 }
 
-.BuyOptimoon-container {
+.BuyClicker-container {
   padding: 0 0 3.1rem 0;
   width: 100%;
 }
 
-.BuyOptimoon-container .section-title-content {
+.BuyClicker-container .section-title-content {
   justify-content: flex-start;
 }

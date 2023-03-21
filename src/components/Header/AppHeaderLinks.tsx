@@ -26,7 +26,7 @@ export function AppHeaderLinks({
       {small && (
         <div className="App-header-links-header">
           <Link className="App-header-link-main" to="/">
-            <img src="/logo.png" alt="Optimoon Logo" />
+            <img src="/logo.png" alt="Clicker Logo" />
           </Link>
           <div
             className="App-header-menu-icon-block mobile-cross-menu"
@@ -70,9 +70,9 @@ export function AppHeaderLinks({
       </>
 
       <div className="App-header-link-container">
-        <ExternalLink href="https://docs.optimoondex.com" className="header-link-cus">
+        {/* <ExternalLink href="https://docs.optimoondex.com" className="header-link-cus">
           <Trans>Docs</Trans>
-        </ExternalLink>
+        </ExternalLink> */}
       </div>
 
       {small && !isHomeSite() && (
