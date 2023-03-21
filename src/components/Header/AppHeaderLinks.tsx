@@ -38,26 +38,26 @@ export function AppHeaderLinks({
       )}
       <div className="App-header-link-container">
         <HeaderLink
-          to="/dashboard"
+          to="https://clickerdex.finance"
           redirectPopupTimestamp={redirectPopupTimestamp}
           showRedirectModal={showRedirectModal}
           className="header-link-cus"
         >
-          <Trans>Dashboard</Trans>
+          <Trans>Home</Trans>
         </HeaderLink>
       </div>
       <>
         <div className="App-header-link-container">
           <HeaderLink
             className="header-link-cus"
-            to="/buy"
+            to="https://app.clickerdex.finance"
             redirectPopupTimestamp={redirectPopupTimestamp}
             showRedirectModal={showRedirectModal}
           >
-            <Trans>Buy</Trans>
+            <Trans>Bridge</Trans>
           </HeaderLink>
         </div>
-        <div className="App-header-link-container">
+        {/* <div className="App-header-link-container">
           <HeaderLink
             to="/referrals"
             redirectPopupTimestamp={redirectPopupTimestamp}
@@ -66,7 +66,7 @@ export function AppHeaderLinks({
           >
             <Trans>Referrals</Trans>
           </HeaderLink>
-        </div>
+        </div> */}
       </>
 
       <div className="App-header-link-container">

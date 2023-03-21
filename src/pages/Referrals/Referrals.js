@@ -126,9 +126,9 @@ function Referrals({ connectWallet, setPendingTxns, pendingTxns }) {
             <div className="Page-description">
               <Trans>
                 Get fee discounts and earn rebates through the Clicker referral program.
-                <br />
+                {/*     <br />
                 For more information, please read the{" "}
-                <ExternalLink href="https://docs.optimoondex.com/referrals">referral program details</ExternalLink>.
+                <ExternalLink href="https://docs.optimoondex.com/referrals">referral program details</ExternalLink>. */}
               </Trans>
             </div>
           </div>

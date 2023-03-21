@@ -429,12 +429,11 @@ function FullApp() {
           />
           <Switch>
             <Route exact path="/">
-              <Redirect to="/dashboard" />
+              <Redirect to="/trade" />
             </Route>
-
-            <Route exact path="/dashboard">
+            {/* <Route exact path="/dashboard">
               <Dashboard />
-            </Route>
+            </Route> */}
             <>
               <Route exact path="/trade">
                 <Exchange
@@ -451,7 +450,7 @@ function FullApp() {
                   savedShouldDisableValidationForTesting={savedShouldDisableValidationForTesting}
                 />
               </Route>
-              <Route exact path="/buy">
+              {/* <Route exact path="/buy">
                 <Buy
                   savedSlippageAmount={savedSlippageAmount}
                   setPendingTxns={setPendingTxns}
@@ -463,7 +462,7 @@ function FullApp() {
               </Route>
               <Route exact path="/referrals/:account">
                 <Referrals pendingTxns={pendingTxns} connectWallet={connectWallet} setPendingTxns={setPendingTxns} />
-              </Route>
+              </Route> */}
             </>
             <Route path="*">
               <PageNotFound />
