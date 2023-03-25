@@ -24,7 +24,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(90deg, #010a1b30 0%, #02001d4b 100%);
+  background: linear-gradient(to right, #16182e, #16182e);
   z-index: -10;
 }
 
@@ -171,12 +171,7 @@
   font-weight: 800;
 }
 .header-link-cus {
-  background: linear-gradient(to right, rgb(2, 2, 2), rgb(1, 0, 36));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -o-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-fill-color: transparent;
+  color: white;
 }
 .header-link-cus.active {
   /* background: linear-gradient(to right, rgb(250, 0, 0), rgb(255, 238, 1)); */

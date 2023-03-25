@@ -36,14 +36,14 @@ export function AppHeaderLinks({
           </div>
         </div>
       )}
-      {/* <div className="App-header-link-container">
+      <div className="App-header-link-container">
         <ExternalLink
-          href="https://clickerdex.finance"
-          className="header-link-cus"
+          href="https://docs.zkexchange.finance"
+                  className="header-link-cus"
         >
-          <Trans>Home</Trans>
+          <Trans>Whitepaper</Trans>
         </ExternalLink>
-      </div> */}
+      </div>
       <>
         {/* <div className="App-header-link-container">
           <ExternalLink
