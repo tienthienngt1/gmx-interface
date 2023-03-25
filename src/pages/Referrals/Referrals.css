@@ -19,7 +19,7 @@
   position: relative;
   padding: 2.4rem;
   max-width: 59.2rem;
-  background: linear-gradient(to right, #080336, #360322) padding-box, linear-gradient(to right, red, yellow) border-box;
+  background: linear-gradient(to right, #080336, #360322);
   border: 1px solid transparent;
   border-radius: 2rem;
 }

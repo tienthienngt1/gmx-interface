@@ -26,7 +26,6 @@
 }
 
 .TokenSelector-box:hover {
-  background: linear-gradient(90deg, red, yellow);
 }
 
 .Token-info {
@@ -63,8 +62,7 @@
 
 .TokenSelector-token-row {
   cursor: pointer;
-  background: linear-gradient(90deg, rgb(6, 6, 56), rgb(1, 2, 44)) padding-box,
-    linear-gradient(90deg, red, yellow) border-box;
+  background: linear-gradient(90deg, rgb(6, 6, 56), rgb(1, 2, 44)) padding-box;
   border: 1px solid transparent;
   position: relative;
   border-radius: 20px;
@@ -127,7 +125,6 @@
 }
 
 .TokenSelector-token-row:active {
-  background: linear-gradient(to left, red, yellow) padding-box;
   border: none;
 }
 

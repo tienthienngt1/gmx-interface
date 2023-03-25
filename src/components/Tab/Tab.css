@@ -23,14 +23,14 @@
 
 .Tab.block .Tab-option:hover {
   color: rgba(255, 255, 255, 1);
-  background: linear-gradient(to right, rgba(11, 11, 182, 0.993), rgb(172, 7, 7));
+  background: linear-gradient(to right, rgba(11, 11, 182, 0.993), black);
   opacity: 0.5;
 }
 
 .Tab.block .Tab-option.active {
   opacity: 1;
   pointer-events: none;
-  background: linear-gradient(to right, #080336, #360322) padding-box, linear-gradient(to right, red, yellow) border-box;
+  background: linear-gradient(to right, #080336, #360322) padding-box;
   border: 1px solid transparent;
   color: rgba(255, 255, 255, 1);
 }
@@ -68,7 +68,7 @@
   padding: 10px;
   border: 1px solid transparent;
   border-radius: 50px;
-  background: linear-gradient(90deg, #080336, #360322) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  background: linear-gradient(90deg, #080336, #360322) padding-box;
   font-size: var(--font-base);
 }
 

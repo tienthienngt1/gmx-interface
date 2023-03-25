@@ -419,7 +419,7 @@ msgid "Buy GMX using any token from any network:"
 msgstr ""
 
 #: src/pages/Buy/Buy.js
-msgid "Buy Clicker"
+msgid "Buy ZK"
 msgstr ""
 
 #: src/components/Glp/GlpSwap.js
@@ -1406,7 +1406,7 @@ msgid "Generating shareable image..."
 msgstr "Generierung von teilbaren Bildern..."
 
 #: src/pages/Referrals/Referrals.js
-msgid "Get fee discounts and earn rebates through the Clicker referral program.<0/>For more information, please read the <1>referral program details</1>."
+msgid "Get fee discounts and earn rebates through the ZK referral program.<0/>For more information, please read the <1>referral program details</1>."
 msgstr ""
 
 #: src/components/Header/HomeHeaderLinks.tsx

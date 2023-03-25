@@ -13,11 +13,10 @@ export default function Footer({ showRedirectModal, redirectPopupTimestamp }: Pr
   const isHome = isHomeSite();
 
   return (
-    <div className="Footer">
+    <div className="Footer" style={{paddingBottom: "20px"}}>
       <div className={cx("Footer-wrapper", { home: isHome })}>
         <div className="Footer-logo">
-          <img src="/logo.png" alt="Clicker logo" width={50} />
-          CLICKER
+          <img src="/logo.png" alt="ZK logo" width={100} />
         </div>
         <div className="Footer-social-link-block">
           {SOCIAL_LINKS.map((platform) => {
@@ -28,7 +27,7 @@ export default function Footer({ showRedirectModal, redirectPopupTimestamp }: Pr
             );
           })}
         </div>
-        <div className="Footer-links">
+        <div className="Footer-links" style={{marginBottom: "20px"}}>
           {getFooterLinks(isHome).map(({ external, text, link, isAppLink }) => {
             if (external) {
               return (

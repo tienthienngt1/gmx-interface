@@ -3,14 +3,14 @@
   margin-left: 2.4rem;
   border: 1px solid transparent;
   border-radius: 50px;
-  background: linear-gradient(90deg, #16182e, #04354e) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  background: linear-gradient(90deg, #16182e, #04354e) padding-box;
   height: 3.6rem;
   display: inline-flex;
   align-items: center;
   color: white;
 }
 .App-header-network:hover {
-  background: linear-gradient(90deg, #242b74, #05415f) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  background: linear-gradient(90deg, #242b74, #05415f) padding-box;
 }
 
 .App-header-language {
@@ -24,7 +24,7 @@
   min-width: 17rem;
   padding: 5px;
   border-radius: 10px;
-  background: linear-gradient(90deg, #14173f, #032536) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  background: linear-gradient(90deg, #14173f, #032536) padding-box;
   border: 1px solid transparent;
 }
 .network-dropdown-items:last-child {
@@ -33,7 +33,7 @@
 
 .network-dropdown-divider {
   margin: 0.8rem;
-  background: linear-gradient(90deg, #14173f, #032536) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  background: linear-gradient(90deg, #14173f, #032536) padding-box;
   border-bottom: 1px solid transparent;
 }
 .network-dropdown:hover {
@@ -67,7 +67,6 @@
 
 .network-dropdown-seperator {
   width: 1px;
-  background: linear-gradient(180deg, red, yellow);
   margin: 0.8rem 0;
 }
 
@@ -128,7 +127,7 @@
   color: #a0a3c4;
   padding: 0.8rem;
   font-size: 1.25rem;
-  background: linear-gradient(90deg, #14173f, #032536) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  background: linear-gradient(90deg, #14173f, #032536) padding-box;
   border-bottom: 1px solid transparent;
   margin-bottom: 5px;
 }
@@ -145,7 +144,7 @@
 }
 
 .language-modal-item.active {
-  background: linear-gradient(to right, #1b1f4b, #1b1f4b) padding-box, linear-gradient(to right, red, yellow) border-box;
+  background: linear-gradient(to right, #1b1f4b, #1b1f4b) padding-box;
   border: 1px solid transparent;
 }
 

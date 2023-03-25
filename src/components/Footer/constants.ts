@@ -33,6 +33,6 @@ export function getFooterLinks(isHome) {
 }
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { link: "https://twitter.com/ClickerToken", name: "Twitter", icon: twitterIcon },
-  { link: "https://t.me/ClickerToken", name: "Telegram", icon: telegramIcon },
+  { link: "https://twitter.com/", name: "Twitter", icon: twitterIcon },
+  { link: "https://t.me/", name: "Telegram", icon: telegramIcon },
 ];

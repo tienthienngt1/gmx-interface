@@ -26,7 +26,7 @@ export function AppHeaderLinks({
       {small && (
         <div className="App-header-links-header">
           <Link className="App-header-link-main" to="/">
-            <img src="/logo.png" alt="Clicker Logo" />
+            <img src="/logo.png" alt="ZK Logo" />
           </Link>
           <div
             className="App-header-menu-icon-block mobile-cross-menu"
@@ -36,23 +36,23 @@ export function AppHeaderLinks({
           </div>
         </div>
       )}
-      <div className="App-header-link-container">
+      {/* <div className="App-header-link-container">
         <ExternalLink
           href="https://clickerdex.finance"
           className="header-link-cus"
         >
           <Trans>Home</Trans>
         </ExternalLink>
-      </div>
+      </div> */}
       <>
-        <div className="App-header-link-container">
+        {/* <div className="App-header-link-container">
           <ExternalLink
             className="header-link-cus"
             href="https://app.clickerdex.finance"
           >
             <Trans>Bridge</Trans>
           </ExternalLink>
-        </div>
+        </div> */}
         {/* <div className="App-header-link-container">
           <HeaderLink
             to="/referrals"

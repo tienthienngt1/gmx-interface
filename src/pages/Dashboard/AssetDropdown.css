@@ -1,7 +1,6 @@
 .asset-menu-items {
   position: absolute;
-  background: linear-gradient(to right, rgb(2, 2, 37), rgb(48, 1, 1)) padding-box,
-    linear-gradient(to right, red, yellow) border-box;
+  background: linear-gradient(to right, rgb(2, 2, 37), rgb(48, 1, 1));
   border: 1px solid transparent;
   border-radius: 0.4rem;
   outline: none;

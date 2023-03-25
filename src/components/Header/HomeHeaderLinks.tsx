@@ -44,7 +44,7 @@ export function HomeHeaderLinks({ small, clickCloseIcon, redirectPopupTimestamp,
       {small && (
         <div className="App-header-links-header">
           <Link className="App-header-link-main" to="/">
-            <img src="/logo.png" alt="Clicker Logo" />
+            <img src="/logo.png" alt="ZK Logo" />
           </Link>
           <div
             className="App-header-menu-icon-block mobile-cross-menu"

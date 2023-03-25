@@ -203,7 +203,6 @@ a.plain {
 }
 
 .default-btn {
-  background: linear-gradient(to right, rgba(250, 0, 0, 0.89), rgba(255, 238, 1, 0.801));
   border-radius: 50px;
   font-size: var(--font-sm);
   line-height: 2rem;
@@ -226,11 +225,9 @@ a.plain {
 }
 
 .default-btn:hover {
-  background: linear-gradient(to right, rgba(250, 0, 0, 0.555), rgba(255, 238, 1, 0.445));
 }
 
 .default-btn:active {
-  background: linear-gradient(to right, rgba(250, 0, 0, 0.555), rgba(255, 238, 1, 0.445));
   border: none;
   box-sizing: border-box;
   overflow: hidden;

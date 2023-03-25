@@ -8,7 +8,7 @@
   border: 1px solid transparent;
   border-radius: 50px;
   background-clip: padding-box;
-  background: linear-gradient(90deg, #16182e, #04354e) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  background: linear-gradient(90deg, #16182e, #04354e) padding-box;
   border: 1px solid transparent;
   .btn-icon {
     display: inline-flex;
@@ -22,7 +22,7 @@
     letter-spacing: 0;
   }
   &:hover {
-    background: linear-gradient(90deg, #242b74, #05415f) padding-box, linear-gradient(90deg, red, yellow) border-box;
+    background: linear-gradient(90deg, #242b74, #05415f) padding-box, linear-gradient(90deg, rgb(8, 1, 48), rgb(143, 10, 132)) border-box;
   }
   &:active {
     background: var(--dark-blue-active);

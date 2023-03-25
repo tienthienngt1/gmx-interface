@@ -1,12 +1,12 @@
-.BuyClicker {
+.BuyZK {
   justify-content: space-between;
 }
 
-.BuyClicker-container {
+.BuyZK-container {
   padding: 0 0 3.1rem 0;
   width: 100%;
 }
 
-.BuyClicker-container .section-title-content {
+.BuyZK-container .section-title-content {
   justify-content: flex-start;
 }

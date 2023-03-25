@@ -281,7 +281,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(90deg, #14173f, #032536) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  background: linear-gradient(90deg, #14173f, #032536) padding-box;
   border: 1px solid transparent;
 }
 .ExchangeChart-dollar-sign {
@@ -665,7 +665,7 @@ table.Exchange-list th {
 }
 
 .Exchange-swap-option-tabs.Tab.block .Tab-option.active {
-  background: linear-gradient(90deg, #080336, #360322) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  background: linear-gradient(90deg, #080336, #360322) padding-box;
   border: 1px solid transparent;
 }
 
@@ -783,7 +783,7 @@ input.Exchange-swap-input.small {
   border-radius: 3.1rem;
   cursor: pointer;
   user-select: none;
-  background: linear-gradient(90deg, #05164b, #200116) padding-box, linear-gradient(90deg, red, yellow) border-box;
+  background: linear-gradient(90deg, #05164b, #200116) padding-box;
   border: 1px solid transparent;
   display: flex;
   justify-content: center;
