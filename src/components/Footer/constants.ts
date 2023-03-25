@@ -33,6 +33,6 @@ export function getFooterLinks(isHome) {
 }
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { link: "https://twitter.com/ZKexchange_Portal", name: "Twitter", icon: twitterIcon },
-  { link: "https://t.me/ZKExchange_", name: "Telegram", icon: telegramIcon },
+  { link: "https://twitter.com/ZKExchange_", name: "Twitter", icon: twitterIcon },
+  { link: "https://t.me/ZKexchange_Portal", name: "Telegram", icon: telegramIcon },
 ];
